@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirzaraxmatjon GameStudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Mirzaraxmatjon GameStudio</h1>
+
+        <div class="menu">
+            <button class="btn" id="playBtn">🎮 O'yin o'ynash</button>
+            <button class="btn" id="scoreBtn">📊 Ballarim</button>
+        </div>
+
+        <div id="gameContainer" class="hidden">
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+            <div id="mobileControls" class="mobile-controls hidden">
+                <button data-dir="up">⬆️</button>
+                <div>
+                    <button data-dir="left">⬅️</button>
+                    <button data-dir="down">⬇️</button>
+                    <button data-dir="right">➡️</button>
+                </div>
+            </div>
+
+            <button id="restartBtn" class="btn hidden">🔄 Qaytadan boshlash</button>
+        </div>
+
+        <div id="scorePage" class="hidden score-box">
+            <h2>Ballarim</h2>
+            <p id="scoreText"></p>
+            <p id="rankText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
